@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "4c7d9b20-ee5d-40b8-997c-cba551379b1b",
+		"name": "postman_pessonizando",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7790857"
+	},
+	"item": [
+		{
+			"name": "PegaTodosClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PegaTodosClientesID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cliente/401401",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"401401"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CriarNovoCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "            {\r\n                \"nome\": \"Vinny\",\r\n                \"idade\": 30,\r\n                 \"id\": \"123456789\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AtualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"nome\": \"Vinny\",\r\n    \"idade\": 25,\r\n    \"id\": \"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ApagarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cliente/123456789",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cliente",
+						"123456789"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PegaClienteRisco",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "senha",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "aluno",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/risco/123456789",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"risco",
+						"123456789"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
