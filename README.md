@@ -1,4 +1,4 @@
-# 🎯 Curso Testanto APIs do Zero com Postman - Pessonizando <br>
+# 🎯 Curso Testanto APIs do Zero com Postman | Pessonizando <br>
 🔗 https://www.youtube.com/playlist?list=PLEqTHftpM91OzKYUkpaEuByhSpJYc90Hs
 
 
